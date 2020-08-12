@@ -48,3 +48,4 @@
   <Config Name="downloads" Target="/app/Downloads" Default="" Mode="rw" Description="Container Path: /app/Downloads" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/nas/</Config>
   <Config Name="config" Target="/app/.config/BaiduPCS-Go" Default="" Mode="rw" Description="Container Path: /app/.config/BaiduPCS-Go" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/BaiduPCS/</Config>
   <Config Name="port" Target="5299" Default="" Mode="tcp" Description="Container Port: 5299" Type="Port" Display="always" Required="false" Mask="false">5299</Config>
+</Container>
