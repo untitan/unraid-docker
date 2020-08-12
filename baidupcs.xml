@@ -14,7 +14,7 @@
   <Category/>  
   <WebUI>http://[IP]:[PORT:5299]/</WebUI>  
   <TemplateURL/>  
-  <Icon>https://github.com/untitan/unraid-docker/raw/master/baidupcs.png</Icon>  
+  <Icon>https://raw.githubusercontent.com/untitan/unraid-docker/master/baidupcs.png</Icon>  
   <ExtraParams/>  
   <PostArgs/>  
   <CPUset>1</CPUset>  
