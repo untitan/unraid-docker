@@ -1,26 +1,27 @@
 <?xml version="1.0"?>
-<Container>
+<Container version="2">
   <Name>BaiduPCS</Name>
   <Repository>80x86/baidupcs</Repository>
-  <Registry>https://hub.docker.com/r/80x86/baidupcs</Registry>
+  <Registry/>
   <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support></Support>
-  <Project>https://hub.docker.com/r/80x86/baidupcs</Project>
-  <Overview>baidupcs</Overview>
-  <Description>
-  </Description>
-  <Category>Cloud: Network:Web Status:Stable</Category>
-  <WebUI>http://[IP]:[PORT:5299]</WebUI>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:5299]/</WebUI>
+  <TemplateURL/>
   <Icon>https://github.com/untitan/unraid-docker/raw/master/baidupcs.png</Icon>
-  <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
-  <PostArgs></PostArgs>
-  <CPUset/>
-  <DateInstalled></DateInstalled>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset>1</CPUset>
+  <DateInstalled>1597261497</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description></Description>
-    <Networking>
+  <Description/>
+  <Networking>
     <Mode>host</Mode>
     <Publish>
       <Port>
@@ -37,16 +38,14 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/BaiduPCS</HostDir>
+      <HostDir>/mnt/user/appdata/BaiduPCS/</HostDir>
       <ContainerDir>/app/.config/BaiduPCS-Go</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Environment>
-    <Variable>
-      <Value>5299</Value>
-      <Name>WEB_PORT</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
+  <Environment/>
+  <Labels/>
+  <Config Name="downloads" Target="/app/Downloads" Default="" Mode="rw" Description="Container Path: /app/Downloads" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/nas/</Config>
+  <Config Name="config" Target="/app/.config/BaiduPCS-Go" Default="" Mode="rw" Description="Container Path: /app/.config/BaiduPCS-Go" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/BaiduPCS/</Config>
+  <Config Name="port" Target="5299" Default="" Mode="tcp" Description="Container Port: 5299" Type="Port" Display="always" Required="false" Mask="false">5299</Config>
 </Container>
