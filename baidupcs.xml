@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>BaiduPCS</Name>
+  <Repository>80x86/baidupcs</Repository>
+  <Registry>https://hub.docker.com/r/80x86/baidupcs</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project>https://hub.docker.com/r/80x86/baidupcs</Project>
+  <Overview>baidupcs</Overview>
+  <Description>
+  </Description>
+  <Category>Cloud: Network:Web Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:5299]</WebUI>
+  <Icon>https://github.com/untitan/unraid-docker/raw/master/baidupcs.png</Icon>
+  <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
+  <PostArgs></PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+    <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5299</HostPort>
+        <ContainerPort>5299</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/nas/</HostDir>
+      <ContainerDir>/app/Downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/BaiduPCS</HostDir>
+      <ContainerDir>/app/.config/BaiduPCS-Go</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>5299</Value>
+      <Name>WEB_PORT</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+</Container>
